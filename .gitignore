@@ -1,19 +1,19 @@
 .DS_Store
 
 main/node_modules
-main/packge-lock.json
+main/package-lock.json
 
 react-hash/node_modules
-react-hash/packge-lock.json
+react-hash/package-lock.json
 
 react-history/node_modules
-react-history/packge-lock.json
+react-history/package-lock.json
 
 vue-hash/node_modules
-vue-hash/packge-lock.json
+vue-hash/package-lock.json
 
 vue-history/node_modules
-vue-history/packge-lock.json
+vue-history/package-lock.json
 
 /dist
 
