@@ -7,28 +7,34 @@ import {registerMicroApps, start} from 'qiankun';
 
 registerMicroApps([
   {
-    name: 'vueHashApp',
+    name: 'vueHash',
     entry: 'http://localhost:7070',
     container: '#mainApp',
-    activeRule: '/vue-hash-app',
+    activeRule: '/vue-hash',
   },
   {
-    name: 'vueHistoryApp',
+    name: 'vueHistory',
     entry: 'http://localhost:6060',
     container: '#mainApp',
-    activeRule: '/vue-history-app',
+    activeRule: '/vue-history',
   },
   {
-    name: 'reactHashApp',
-    entry: 'http://localhost:3000',
+    name: 'reactHash',
+    entry: 'http://localhost:5050',
     container: '#mainApp',
-    activeRule: '/react-hash-app',
+    activeRule: '/react-hash',
   },
   {
-    name: 'reactHistoryApp',
-    entry: 'http://localhost:3001',
+    name: 'reactHistory',
+    entry: 'http://localhost:4040',
     container: '#mainApp',
-    activeRule: '/react-history-app',
+    activeRule: '/react-history',
+  },
+  {
+    name: 'react17',
+    entry: 'http://localhost:3030',
+    container: '#mainApp',
+    activeRule: '/react17',
   },
 ]);
 

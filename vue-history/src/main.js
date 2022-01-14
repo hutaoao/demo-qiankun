@@ -1,5 +1,6 @@
 import './public-path';
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import App from './App.vue';
 import routes from './router';
 
@@ -10,6 +11,12 @@ let instance = null;
 
 function render(props = {}) {
   const {container} = props;
+
+  router = new VueRouter({
+    base: window.__POWERED_BY_QIANKUN__ ? '/vue-history/' : '/',
+    mode: 'history',
+    routes,
+  });
 
   instance = new Vue({
     router,

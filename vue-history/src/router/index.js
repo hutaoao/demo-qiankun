@@ -13,8 +13,4 @@ const routes = [
   {path: '/', component: Home},
 ]
 
-export default new Router({
-  mode: 'history',
-  routes,
-  base: window.__POWERED_BY_QIANKUN__ ? '/vue-history-app/' : '/child/vue-history-app/',
-})
+export default routes;

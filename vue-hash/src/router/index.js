@@ -13,7 +13,4 @@ const routes = [
   {path: '/', component: Home},
 ]
 
-export default new Router({
-  mode: 'hash',
-  routes,
-})
+export default routes;

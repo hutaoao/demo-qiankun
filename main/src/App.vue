@@ -16,26 +16,31 @@ export default {
       menuList: [
         {
           name: 'VueHash',
-          path: '/vue-hash-app/#/',
+          path: '/vue-hash/#/',
         },
         {
           name: 'VueHistory',
-          path: '/vue-history-app',
+          path: '/vue-history',
         },
         {
           name: 'ReactHash',
-          path: '/react-hash-app/#/',
+          path: '/react-hash/#/',
         },
         {
           name: 'ReactHistory',
-          path: '/react-history-app',
+          path: '/react-history',
+        },
+        {
+          name: 'React17',
+          path: '/react17',
         },
       ]
     }
   },
   methods: {
     goto(path) {
-      window.location.href = path;
+      // window.location.href = path;
+      history.pushState(null, path, path)
     }
   }
 }
